@@ -1,28 +1,37 @@
 body {
-    background-image: url(./imgs-hw/main-screen__bgc.png);
+    background-color: black;
+    /*background-image: url(./imgs-hw/main-screen__bgc.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    color: #fff;
+    font-weight: 400;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1300px;
-    margin: 30px auto 50px auto;
-    font-family: 'Roboto';
+    font-family: Roboto;
 }
 header img {
     height: 40px;
     width: 40px;
+    margin-top: 40px;
+    margin-left: 80px;
+
 }
 header ul {
     display: flex;
     align-items: center;
-    align-content: space-between;
-    flex-wrap: wrap;
     list-style: none;
     gap: 50px;
+    margin-top: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+
 }
+
 header ul li a {
     color: #fff;
     text-decoration: none;
@@ -31,25 +40,20 @@ header button {
     color: #fff;
     border: none;
     border-radius: 50px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px;
+    margin-right: 80px;
+    margin-top: 38px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
 }
 
 
-main {
-    font-family: 'Roboto';
-    color: #fff;
-}
 .main-screen__title {
-    position: absolute;
-    width: 920px;
-    height: 180px;
-    left: 312px;
-    top: 270px;
-    font-style: normal;
+    margin-top: 190px;
+    padding-left: 312px;
     font-weight: 700;
     font-size: 64px;
     line-height: 140%;
+    
 }
 .indication-items__item {
     display: flex;
@@ -58,100 +62,68 @@ main {
     align-items: center;
     position: absolute;
     background: #121212;
+    margin-top: 50px;
+    order: 0;
+flex-grow: 0;
 }
 .indication-items__item.item-day {
-    padding: 20px 30px;
-    width: 102px;
-    height: 112px;
-    left: 312px;
-    top: 500px;
-    margin-right: 30px;
+    margin-left: 312px;
 }
 .indication-items__item.item-hours {
-    padding: 20px 30px;
-    width: 107px;
-    height: 112px;
-    left: 444px;
-    top: 500px;
+    margin-left: 444px;
 }
 .indication-items__item.item-minutes {
-    padding: 20px 30px;
-    width: 108px;
-    height: 112px;
-    left: 581px;
-    top: 500px;
+    margin-left: 581px;
+
 }
 .indication-items__item.item-seconds {
-    padding: 20px 30px;
-    width: 115px;
-    height: 112px;
-    left: 719px;
-    top: 500px;
+    margin-left: 719px;
+
 }
 .item-day__number,
 .item-hours__number,
 .item-minutes__number,
 .item-seconds__number {
-        width: 42px;
-    height: 50px;
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 140%;
+    padding: 20px 30px 0px;
 }
 .item-day__title,
 .item-hours__title,
 .item-minutes__title,
 .item-seconds__title {
-    width: 39px;
-    height: 22px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    text-align: center;
     opacity: 0.4;
+    padding-bottom: 20px;
+
 }
 
 .main-screen-line {
-    position: absolute;
-    width: 1920px;
-    height: 130px;
-    left: 0px;
-    top: 830px;
-    background: #121212;
+    margin-top: 380px;
+    background-color: #121212;
     display: flex;
-    /*justify-content: space-between;*/
     align-items: center;
 }
-.main-screen-line__button,
-.all-studens__number,
-.sucsess-studens__number,
-.students-earn__number {
-    font-family: 'Roboto';  
-    color: #fff;
-    font-weight: 700px;
-    font-size: 16px;
-}
 .main-screen-line__button {
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
-    border-radius: 50px;
+    margin: 43px 80px 43px 312px;
     padding: 10px 30px;
-    width: 169px;
-    height: 44px;
-    margin-left: 312px;
-    margin-right: 81px;
-    grid-row-start: 1;
-    grid-row-end: 3;
-
+    border-radius: 50px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 .main-screen-line__studens {
-    margin-left: 0px;
+    margin-left: 1px;
     margin-right: 81px;
 }
-.all-studens__list {
+.all-studens__list,
+.sucsess-studens__list
+ {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -167,17 +139,9 @@ main {
 .all-studens__list li:last-child {
     margin-right: 0px;
 }
-.sucsess-studens__list {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin-top: 0px;
-    padding-left: 0px;
-}
 .sucsess-studens__list li:first-child {
     margin-right: 30px;
     opacity: 0.4;
     font-weight: 400;
     line-height: 24px;
 }
-
