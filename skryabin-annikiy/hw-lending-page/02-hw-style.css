@@ -122,11 +122,12 @@ flex-grow: 0;
     margin-right: 81px;
 }
 .all-studens__list,
-.sucsess-studens__list
- {
+.sucsess-studens__list,
+.students-earn__how,
+.students-earn__from {
     list-style: none;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 10px;
     padding-left: 0px;
 }
@@ -140,8 +141,45 @@ flex-grow: 0;
     margin-right: 0px;
 }
 .sucsess-studens__list li:first-child {
-    margin-right: 30px;
     opacity: 0.4;
     font-weight: 400;
     line-height: 24px;
 }
+.all-studens__list li:last-child,
+.sucsess-studens__list li:last-child,
+.students-earn__how li:last-child {
+    font-weight: 700;
+}
+.students-earn__how li:first-child {
+    opacity: 0.4;
+    padding-right: 30px;
+}
+.students-earn__how li:last-child {
+    padding-right: 353px;
+}
+.students-earn__from {
+    opacity: 0.4;
+}
+.students-earn__from li:first-child {
+    padding-right: 623px;
+}
+
+
+/*.students-earn__range {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+.students-earn__range:first-child {
+    background-color: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+    width: 450px;
+    max-width: 440px;
+    height: 6px;
+}
+.students-earn__range:last-child {
+    background-color: #fff;
+    width: 150px;
+    max-width: 274px;
+    height: 6px;
+}*/
+
