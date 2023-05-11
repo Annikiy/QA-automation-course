@@ -175,3 +175,124 @@ header button {
 .switch-item__active {
     background-color: #fff;
 }
+
+
+.about,
+.price {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.about-items {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+}
+.about-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 84px;
+}
+
+.service-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.service-description__title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.service-description__content {
+    color: #fff;
+}
+.about-item:nth-child(even) {
+    flex-direction: row-reverse;
+} 
+
+.price-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 134px;
+}
+.price-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    justify-content: center;
+    list-style-type: none;
+}
+.price-item {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    background-image: url(./imgs/leaf_blue_litle.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 40px;
+}
+.price-item span {
+    float: right;
+}
+.certificate__title {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact {
+    max-width: 1300px;
+    margin: 150px auto 0 auto;
+}
+.contact-content {
+    display: flex;
+    justify-self: space-between;
+    gap: 48px;
+}
+.contact-content__map iframe {
+    border-radius: 10px;
+}
+.location {
+    background-color: #018ABE;
+    border-radius: 10px;
+    padding: 35px 45px;
+    height: fit-content;
+    width: 100%;
+}
+.location__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+.location-info {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+.location-item__adress {
+    background-image: url('/skryabin-annikiy/lesson-lending-page/imgs/geo.png');
+}
+.location-item__bus-stop {
+    background-image: url('./imgs/metro.png');
+    margin: 20px 0;
+}
+.location-item__calendare {
+    background-image: url('./imgs/calendar.png');
+}
+.location__button {
+    border: none;
+    border-radius: 3px;
+    padding: 9px 15px;
+    cursor: pointer;
+    color: #018ABE;
+    font-weight: 600;
+}
