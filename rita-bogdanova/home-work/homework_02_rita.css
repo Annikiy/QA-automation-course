@@ -324,6 +324,12 @@ header button {
     border-right: solid 2px #fff;
     border-bottom: solid 2px #fff;
 }
+.partners-icons__icon:nth-child(4){
+    border-right: none;
+}
+.icon-bottom{
+    border-bottom: none;
+}
 .partners-icons__top{
     display: flex;
     flex-direction: row;
@@ -354,6 +360,14 @@ header button {
     font-weight: 400;
     opacity: 0.4;
     text-align: center;
+}
+
+.timeline-line__line{
+    background-color: #fff;
+    height: 1px;
+    width: 40px;
+    margin-top: 35px;
+    opacity: 0.4;
 }
 .programma-timeline{
     padding-top: 80px;
