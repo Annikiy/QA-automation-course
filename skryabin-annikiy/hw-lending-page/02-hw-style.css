@@ -1,42 +1,42 @@
 body {
     background-color: black;
-    /*background-image: url(./imgs-hw/main-screen__bgc.png);
-    background-repeat: no-repeat;
-    background-size: cover;*/
     font-family: Roboto, sans-serif;
-    font-style: normal;
     color: #fff;
     font-weight: 400;
 }
-header {
+header  {
+    background-image: url(./imgs-hw/main-screen__bgc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Roboto;
 }
-header img {
+.header__logo {
     height: 40px;
     width: 40px;
-    margin-top: 40px;
-    margin-left: 80px;
+    padding-top: 40px;
+    padding-left: 80px;
 
 }
-header ul {
+.navigation-items {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 50px;
-    margin-top: 48px;
+    padding-top: 48px;
     padding-left: 40px;
     padding-right: 40px;
 
 }
-
-header ul li a {
+.navigation-items li a {
     color: #fff;
     text-decoration: none;
 }
-header button {
+.header__button {
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -46,14 +46,20 @@ header button {
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
 }
 
-
+.main-screen {
+    padding-top: 190px;
+}
 .main-screen__title {
-    margin-top: 190px;
-    padding-left: 312px;
+    padding-right: 350px;
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 64px;
     line-height: 140%;
     
+}
+.indication-items {
+    margin-top: 50px;
 }
 .indication-items__item {
     display: flex;
@@ -62,9 +68,8 @@ header button {
     align-items: center;
     position: absolute;
     background: #121212;
-    margin-top: 50px;
     order: 0;
-flex-grow: 0;
+    flex-grow: 0;
 }
 .indication-items__item.item-day {
     margin-left: 312px;
@@ -100,7 +105,7 @@ flex-grow: 0;
 
 }
 
-.main-screen-line {
+/* .main-screen-line {
     margin-top: 380px;
     background-color: #121212;
     display: flex;
@@ -162,7 +167,7 @@ flex-grow: 0;
 }
 .students-earn__from li:first-child {
     padding-right: 623px;
-}
+} */
 
 
 /*.students-earn__range {
