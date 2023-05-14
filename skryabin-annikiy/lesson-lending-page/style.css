@@ -133,13 +133,13 @@ header button {
     height: 276px;
     max-width: 500px;
     position: relative;
-    /*border-radius: 10px;*/
 }
 
 .comment-item__title {
     font-size: 20px;
     font-weight: 700;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 .comment-item__active {
     height: 350px;
@@ -278,15 +278,21 @@ header button {
     margin-bottom: 30px;
     list-style-type: none;
 }
-.location-item__adress {
+.location-item {
+    color: #fff;
+    font-weight: 400;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+}
+.location-item__address {
     background-image: url('/skryabin-annikiy/lesson-lending-page/imgs/geo.png');
 }
 .location-item__bus-stop {
-    background-image: url('./imgs/metro.png');
+    background-image: url('/skryabin-annikiy/lesson-lending-page/imgs/metro.png');
     margin: 20px 0;
 }
-.location-item__calendare {
-    background-image: url('./imgs/calendar.png');
+.location-item__calendar {
+    background-image: url('/skryabin-annikiy/lesson-lending-page/imgs/calendar.png');
 }
 .location__button {
     border: none;
@@ -295,4 +301,16 @@ header button {
     cursor: pointer;
     color: #018ABE;
     font-weight: 600;
+}
+footer {
+    margin: 90px auto 30px auto;
+    color: #fff;
+    font-family: "Proxima Nova";
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1030px;
+}
+.created-at {
+    font-weight: 400;
 }
