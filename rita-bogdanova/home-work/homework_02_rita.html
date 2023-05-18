@@ -9,19 +9,21 @@
 </head>
 <body>
     <header>
-        <div class="header__top">
-        <img src="./imgs_hw/logo.png" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="#general">Главная</a></li>
-                <li><a href="#lessons">Курсы</a></li>
-                <li><a href="#schedule">Расписание</a></li>
-                <li><a href="#teachers">Преподаватели</a></li>
-                <li><a href="#emails">Рассылка</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+        <div class="header__top header-top">
+        <div class="header-top__logo">
+            <img src="./imgs_hw/logo.png" alt="logo">
+        </div>
+        <nav class="header-top__navigation">
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item"><a href="#general">Главная</a></li>
+                <li class="header__navigation-item"><a href="#lessons">Курсы</a></li>
+                <li class="header__navigation-item"><a href="#schedule">Расписание</a></li>
+                <li class="header__navigation-item"><a href="#teachers">Преподаватели</a></li>
+                <li class="header__navigation-item"><a href="#emails">Рассылка</a></li>
+                <li class="header__navigation-item"><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
-        <button>Зайти в кабинет</button>
+        <div class="header__action"><button>Зайти в кабинет</button></div>
         </div>
 
         <div class="header__main header-main">
@@ -47,40 +49,38 @@
         </div>
     </header>
 
-    <section class="statistic" id="statistic">
-        <div class="statistic__button statistic-button">Заказать курс</div>
-        <div class="statistic__data statistic-data">
-            <div class="statistic-data__text">Учеников всего: <br> Успешно окончили курс:</div>
-            <div class="statistic-data__number">200<br>190</div>
-        </div>
-        <div class="statistic__timeline statistic-timeline">
-            <div class="statistic-timeline__text">
-                <div class="statistic-timeline__text timeline-text">Заработано учениками:</div>
-                <div>400000P</div>
+    <section class="statistic">
+        <div class="statistic__container">
+            <div class="statistic__action"><button>Заказать курс</button></div>
+            <ul class="statistic__list statistic-list">
+                <li class="statistic-list__item">Учеников всего: <span>200</span></li>
+                <li class="statistic-list__item">Успешно закончили курс: <span>190</span></li>
+            </ul>
+            <div class="statistic__progress-line progress-line">
+                <div class="progress-line__info">Заработано учениками: <span>400 000₽</span></div>
+                <div class="progress-line__line">
+                    <div class="progress-line__progress"></div>
+                    0<span>1 000 000₽</span>
+                    <!-- как это? -->
+                </div>
             </div>
-            <div class="statistic-timeline__timeline">
-               <div class="statistic-timeline__timeline red-timeline">                    
-               <div class="statistic-timeline__timeline white-timeline"></div>
-            </div>                                                       
-            </div>
-            <div class="statistic-timeline__numbers">
-                <div>0</div>
-                <div>1000000P</div>
-            </div>
-        </div>
+        </div>    
     </section>
     
     <main class="main_info" id="main_info">
-        <section class="what_we_do" id="what_we_do">
-            <div class="what_we_do__image what_we_do-image">
-                <img class="sys_block" src="./imgs_hw/sys_block.png" alt="sys_block">
-            </div> 
-            <div class="what_we_do__text what_we_do-text">
-                <div class="what_we_do-text__title">Чем мы занимаемся?</div> 
-                <div class="what_we_do-text__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quod! Et eligendi ducimus deleniti perspiciatis reiciendis aliquid animi est nostrum illum accusantium porro rem, eius, quidem laudantium tempore, tenetur modi?</div>
-            </div> 
-        </section>
 
+        <section class="about">
+            <div class="about__image">
+                <img src="./imgs_hw/sys_block.png" alt="sys_block">
+            </div>
+            <div class="about__content">
+                <div class="about__title">Чем мы занимаемся?</div>
+                <div class="about__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. 
+                </div>
+            </div>
+        </section>
+        
         <section class="start" id="start">
             <div class="start__top start-top">
                 <div class="start-top__logo">

@@ -15,7 +15,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-header img {
+.header-top__logo {
     height: 40px;
     width: 40px;
 }
@@ -26,7 +26,7 @@ header img {
     align-items: center;
     flex-wrap: wrap;
 }
-.header__top ul {
+.header__navigation-list {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -93,111 +93,109 @@ header button {
     font-weight: 700;
     opacity: 0.4;
 }
-.main_info{
-}
-.statistic{
-    display: flex;
-    background-color: #121212;
-    color: #fff;
-    justify-content: space-between;
-    margin:0 auto;
-    padding: 30px 312px;
-    gap: 81px;
 
+.statistic {
+    width: 100%;
+    /* что это означает? */
+    background-color: #121212;
+    padding: 36px 0;
 }
-.statistic-button{
+
+.statistic__container {
+    max-width: 1300px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    gap: 30px;
+    justify-content: space-between;
     align-items: center;
-    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+}
+
+.statistic__action button {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    color: #FFFFFF;
     border: none;
     border-radius: 50px;
-    cursor: pointer;
     padding: 10px 30px;
-    font-weight: 700;
-    width: 170px;
-    height: 45px;
-}
-.statistic-data{
-    display: flex;
-    gap: 30px;
-    line-height: 30px;
-}
-.statistic-timeline{
-    display: flex;
-    flex-direction: column;
-    /* max-width: 674px; */
-}
-.statistic-timeline__text{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding-bottom: 8px;
-}
-.statistic-data__text{
-    opacity: 0.4;
-}
-.timeline-text{
-    opacity: 0.4;
-}
-.statistic-timeline__timeline{
-    display: flex;
-    flex-direction: row;
-    width: 714px;
-    max-width: 714px;
-    height: 6px;
-}
-.statistic-timeline__numbers{
-    display: flex;
-    flex-direction: row;
-    opacity: 0.4;
-    justify-content: space-between;
-    padding-top: 10px;
-}
-.red-timeline{
-    display: flex;
-    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
-    justify-content: flex-end;
-}
-.white-timeline{
-    background: #fff;
-    width: 30%;
-    max-width: 274px;
-}
-.statistic-timeline__numbers{
-    display: flex; 
-    justify-content: space-between;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.what_we_do{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 100px 312px 0px 312px;
-    gap: 100px;
-    max-width: 1300px;
+.statistic-list,
+.progress-line__info {
+    font-size: 16px;
+    color: #717171;
+    line-height: 29px;
+    list-style-type: none;
+    width: 230px;
 }
-.what_we_do-image{
-    border: solid 50px #7c6afa;
-    position: relative;
-    width: 470px;
-    height: 400px;
-}
-.what_we_do-image img{
-    position: absolute;
-    top: 70px;
-}
-.what_we_do-text{
-    display: flex;
+
+.statistic-list__item span,
+.progress-line__info span {
     color: #fff;
-    flex-direction: column;
-    padding-left: 134px;
-    padding-top: 70px;
-    gap: 50px;
-    max-width: 630px;
+    float: right;
+    /* тоже не понятно */
 }
-.what_we_do-text__title{
-    font-size: 45px;
+
+.progress-line__info {
+    width: fit-content;
+    /* ??? */
+}
+.progress-line__info span {
+    padding-left: 20px;
+}
+
+.progress-line__progress {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    height: 6px;
+    width: 40%;
+}
+
+.progress-line__line {
+    background: #FFFFFF;
+    height: 6px;
+    width: 714px;
+    color: #717171;
+}
+
+.progress-line__line span {
+    float: right;
+}
+
+
+.about {
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px auto 230px auto;
+}
+
+.about__image {
+    width: 526px;
+    height: 499px;
+    border: 30px solid;
+    border-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    position: relative;
+    border-image-slice: 1; 
+     /* что это означает? */ 
+}
+
+.about__image img {
+    position: absolute;
+    top: 96px;
+    left: 10px;
+}
+
+.about__content {
+    color: #fff;
+    max-width: 636px;
+    text-align: start;
+}
+
+.about__title {
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 45px;
 }
 .start{
     display: flex;
