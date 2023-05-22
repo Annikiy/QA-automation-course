@@ -8,42 +8,32 @@
     <title>Курсы по компьютерной сборке</title>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <img class="header__logo" src="./imgs-hw/logo.png" alt="logo">
-            <nav>
-                <ul class="header__navigation navigation-items">
-                    <li><a href="#Main">Главная</a></li>
-                    <li><a href="#Courses">Курсы</a></li>
-                    <li><a href="#Schedule">Расписание</a></li>
-                    <li><a href="#Mentors">Преподаватели</a></li>
-                    <li><a href="#Mailing">Рассылка</a></li>
-                    <li><a href="#Contacts">Контакты</a></li>
+    <header class="header">
+        <div class="header__top header-top">
+            <div class="header-top__logo">
+                <img src="./imgs-hw/logo.png" alt="logo" />
+            </div>
+            <nav class="header-top__navigation navigation">
+                <ul class="navigation__list list-items">
+                    <li class="list-items__item"><a href="#general">Главная</a></li>
+                    <li class="list-items__item"><a href="#courses">Курсы</a></li>
+                    <li class="list-items__item"><a href="#schedule">Расписание</a></li>
+                    <li class="list-items__item"><a href="#teachers">Преподаватели</a></li>
+                    <li class="list-items__item"><a href="#mailing">Рассылка</a></li>
+                    <li class="list-items__item"><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
-            <form action="https://youtu.be/dQw4w9WgXcQ" target="_blank">
-                <button class="header__button" href="">Зайти в кабинет</button>
-            </form>
+            <div class="header__action">
+                <button>Зайти в кабинет</button>
+            </div>
         </div>
-        <div class="main-screen">
-            <h1 class="main-screen__title">Первый курс<br>по компьютерной сборке</h1>
-            <div class="main-screen__indication indication-items">
-                <div class="indication-items__item item-day">
-                    <div class="item-day__number">18</div>
-                    <div class="item-day__title">Дней</div>
-                </div>
-                <div class="indication-items__item item-hours">
-                    <div class="item-hours__number">18</div>
-                    <div class="item-hours__title">Часов</div>
-                </div>
-                <div class="indication-items__item item-minutes">
-                    <div class="item-minutes__number">18</div>
-                    <div class="item-minutes__title">Минут</div>
-                </div>
-                <div class="indication-items__item item-seconds">
-                    <div class="item-seconds__number">18</div>
-                    <div class="item-seconds__title">Секунд</div>
-                </div>
+        <div class="header__body">
+            <div class="header__general-title">Первый курс <br />по компьютерной сборке</div>
+            <div class="header__counter">
+                <div class="header__counter-item">18 <br/><span>Дней</span></div>
+                <div class="header__counter-item">18 <br/><span>часов</span></div>
+                <div class="header__counter-item">18 <br/><span>минут</span></div>
+                <div class="header__counter-item">18 <br/><span>секунд</span></div>
             </div>
         </div>
     </header>
