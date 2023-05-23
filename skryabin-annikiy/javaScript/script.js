@@ -1,3 +1,45 @@
+// While
+    // let i = 0;
+
+    // while (i < 3){  // вы полняет проверку
+            // выполняет дейстиве 
+    //     console.log('While');
+    //     i++; 
+    // }
+
+// do... while
+    // let i = 0;
+    // do {
+    //     // тело цикла 
+    //     // выполняет дейстиве
+    //     console.log(i);
+    //     i++ 
+    // } while (i > 1) // вы полняет проверку
+
+// for
+    // for (let i; i < 3; i++){
+    //     console.log(i);
+    // }
+    // let i // начало цикла
+    // i < 3 // условие цикла
+    // i++ // после выполнения цикла
+
+const out = document.querySelector('.out');
+const text = 'link';
+let items = '';
+
+for (let i = 0; i <= 10; i++){
+    items += `<li><a href='#'>link - ${i}</a></li>`
+}
+ out.innerHTML = `<ul>${items}</ul>`;
+ alert(items)
+
+
+
+
+
+
+
 // Логические операторы
 // 1. || или
 // 2. && и
